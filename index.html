@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <title>Hello, World!</title>
+    </head>
+    <style>
+    body{ 
+      background-color: pink;
+        color:black;
+      font-size:15px;
+        }
+
+        </style>
+        <body>
+          <h1>
+              Hello, World!
+                </h1>
+          
+                  <button class="button">theme change</button>
+                  </body>
+                  <script>
+  const btn = document.querySelector('.button');
+  const body = document.querySelector('body');
+
+  btn.addEventListener('click', function() {
+    // Check if the current color is pink
+    if (body.style.backgroundColor === 'pink' || body.style.backgroundColor === '') {
+      body.style.backgroundColor = 'black';
+      body.style.color = 'white';
+      body.style.fontSize = "25px";
+      body.style.fontStyle = 'italic';
+      
+    } else {
+      body.style.backgroundColor = 'pink';
+      body.style.color = 'black';
+      body.style.fontSize = "15px";
+      body.style.fontStyle = 'normal';
+    }
+  });
+</script>
+
+                  </html>
